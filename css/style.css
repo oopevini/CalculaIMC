@@ -1,0 +1,82 @@
+body {
+
+    background-color: #4e4376; /* cor de fundo principal para o degrade*/
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+
+    display: flex; /* alinhamento */
+    justify-content: center; /* alinha todos os flex items ao centro dentro do flex container */
+    margin-top: 3cm;
+    
+}
+
+.form-container {
+
+    max-width: 600px; /* ajusta a largura do formulario dentro do container */ 
+    width: 100%;
+    padding: 20px; /* espaço interno para ficar bacana */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1); /* estilo para uma sombra bem de leve */
+    background-color: #4e4376; /* cor de fundo principal para o degrade*/
+    background: linear-gradient(to bottom, #4e4376, #2b5876); /* faz a configuração do degrade */
+    height: 100%; /* para o defrade ocupar o container do formulario inteiro */
+
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] { /* consigo estilizar os inputs do formulario que esta entro do container
+                                        ao mesmo tempo através do type difinido */
+    width: 100%;
+    padding: 10px; /* espaço interno para ficar bacana */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.table-container {
+
+    max-height: 200px; /* define a altura máxima da tabela sem o scroll */
+    overflow: auto; /* coloca o scroll quando a altura é excedida */
+    margin-top: 20px;
+
+}
+
+label {
+
+    color: rgb(0, 0, 0); 
+
+}
+
+button {
+
+    border: solid 1px blue; /* definições da borda */
+    border-radius: 20px;
+    color: blue; /* cor do texto */
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease; /* definições do tempo de transição */
+    width: 80%;
+    height: 1cm;
+
+}
+
+button:hover {
+
+    background-color: blue; /* altera a cor do fundo */
+    color: white; /* muda a cor do texto */
+    transform: scale(1.2) /* muda o tamanho quando o mouse está ou passa por cima */
+
+}
+
+.botaoCentro {
+
+    display: flex;
+    justify-content: center; /* deixa o botao no centro */
+
+}
+
